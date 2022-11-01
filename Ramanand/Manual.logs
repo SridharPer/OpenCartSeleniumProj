@@ -1,0 +1,77 @@
+01/11/2022 17:22:07 devpinoyLogger Cart Class initialized
+01/11/2022 17:22:07 devpinoyLogger Navigation Class Initialized
+01/11/2022 17:22:07 devpinoyLogger Utility Class initialized... Ready To Take ScreenShots
+01/11/2022 17:22:08 devpinoyLogger Screenshot Captured: Before Login
+01/11/2022 17:22:10 devpinoyLogger Screenshot Captured: After Login
+01/11/2022 17:22:10 devpinoyLogger Open cart homepage is opened
+01/11/2022 17:22:10 devpinoyLogger Screenshot Captured: Home Page
+01/11/2022 17:22:10 devpinoyLogger To add items to cart using icon
+01/11/2022 17:22:10 devpinoyLogger Scrolled to the items to be added
+01/11/2022 17:22:10 devpinoyLogger Iterate through the list of items
+01/11/2022 17:22:11 devpinoyLogger Finding the Add to Cart icon
+01/11/2022 17:22:11 devpinoyLogger Add to Cart icon pressed
+01/11/2022 17:22:11 devpinoyLogger Finding the Add to Cart icon
+01/11/2022 17:22:11 devpinoyLogger Add to Cart icon pressed
+01/11/2022 17:22:13 devpinoyLogger Scroll to Top of the homepage
+01/11/2022 17:22:14 devpinoyLogger Screenshot Captured: After adding to cart
+01/11/2022 17:22:14 devpinoyLogger To view Cart
+01/11/2022 17:22:15 devpinoyLogger finding view cart button
+01/11/2022 17:22:15 devpinoyLogger clicked view cart button
+01/11/2022 17:22:16 devpinoyLogger scrolled to view items in cart
+01/11/2022 17:22:18 devpinoyLogger Screenshot Captured: View Cart1
+01/11/2022 17:22:18 devpinoyLogger To continue shopping
+01/11/2022 17:22:19 devpinoyLogger clicking continue shopping button
+01/11/2022 17:22:19 devpinoyLogger Migrates to the home page
+01/11/2022 17:22:19 devpinoyLogger Screenshot Captured: After clicking Coninue shopping
+01/11/2022 17:22:20 devpinoyLogger to view item specification before adding to cart
+01/11/2022 17:22:20 devpinoyLogger Home page opened
+01/11/2022 17:22:20 devpinoyLogger Scrolled down to the item to be selected
+01/11/2022 17:22:20 devpinoyLogger finding the item to be added to the cart after viewing
+01/11/2022 17:22:21 devpinoyLogger clicked on the item
+01/11/2022 17:22:21 devpinoyLogger Item specification Page opened
+01/11/2022 17:22:21 devpinoyLogger Scrolled down to fill details
+01/11/2022 17:22:22 devpinoyLogger Selected color of the item
+01/11/2022 17:22:22 devpinoyLogger enter the quantity of the item
+01/11/2022 17:22:22 devpinoyLogger finding add to cart button
+01/11/2022 17:22:22 devpinoyLogger Add to cart button clicked
+01/11/2022 17:22:24 devpinoyLogger Screenshot Captured: After adding to Cart from item spec page
+01/11/2022 17:22:25 devpinoyLogger to view item specification before adding to cart
+01/11/2022 17:22:25 devpinoyLogger Home page opened
+01/11/2022 17:22:25 devpinoyLogger Scrolled down to the item to be selected
+01/11/2022 17:22:25 devpinoyLogger finding the item to be added to the cart after viewing
+01/11/2022 17:22:26 devpinoyLogger clicked on the item
+01/11/2022 17:22:27 devpinoyLogger enter the quantity of the item
+01/11/2022 17:22:28 devpinoyLogger finding add to cart button
+01/11/2022 17:22:28 devpinoyLogger Add to cart button clicked
+01/11/2022 17:22:30 devpinoyLogger Screenshot Captured: After adding to Cart from item spec page
+01/11/2022 17:22:31 devpinoyLogger to view item specification before adding to cart
+01/11/2022 17:22:31 devpinoyLogger Home page opened
+01/11/2022 17:22:31 devpinoyLogger Scrolled down to the item to be selected
+01/11/2022 17:22:31 devpinoyLogger finding the item to be added to the cart after viewing
+01/11/2022 17:22:32 devpinoyLogger clicked on the item
+01/11/2022 17:22:32 devpinoyLogger enter the quantity of the item
+01/11/2022 17:22:33 devpinoyLogger finding add to cart button
+01/11/2022 17:22:34 devpinoyLogger Add to cart button clicked
+01/11/2022 17:22:36 devpinoyLogger Screenshot Captured: After adding to Cart from item spec page
+01/11/2022 17:22:36 devpinoyLogger To view Cart
+01/11/2022 17:22:37 devpinoyLogger finding view cart button
+01/11/2022 17:22:38 devpinoyLogger clicked view cart button
+01/11/2022 17:22:39 devpinoyLogger scrolled to view items in cart
+01/11/2022 17:22:40 devpinoyLogger Screenshot Captured: View Cart2
+01/11/2022 17:22:40 devpinoyLogger to remove an item from cart
+01/11/2022 17:22:40 devpinoyLogger scroll up to the view item button
+01/11/2022 17:22:41 devpinoyLogger find view items button
+01/11/2022 17:22:41 devpinoyLogger clicked on view items
+01/11/2022 17:22:41 devpinoyLogger finding remove from cart button
+01/11/2022 17:22:41 devpinoyLogger clicked remove item from cart button
+01/11/2022 17:22:42 devpinoyLogger 1 item removed from the cart
+01/11/2022 17:22:42 devpinoyLogger Screenshot Captured: After removing item from cart
+01/11/2022 17:22:43 devpinoyLogger To view items in cart on current page
+01/11/2022 17:22:43 devpinoyLogger find view item button
+01/11/2022 17:22:45 devpinoyLogger Clicked on the view item button
+01/11/2022 17:22:46 devpinoyLogger Screenshot Captured: View items
+01/11/2022 17:22:46 devpinoyLogger to visit checkout page
+01/11/2022 17:22:46 devpinoyLogger Scroll up the page
+01/11/2022 17:22:47 devpinoyLogger find checkout page link
+01/11/2022 17:22:48 devpinoyLogger opened checkout page
+01/11/2022 17:22:49 devpinoyLogger Screenshot Captured: Checkout page

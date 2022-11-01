@@ -1,0 +1,77 @@
+17:22:07,525 DEBUG devpinoyLogger<strong>{1}</strong>:24 - Cart Class initialized
+17:22:07,531 DEBUG devpinoyLogger<strong>{1}</strong>:19 - Navigation Class Initialized
+17:22:07,539 DEBUG devpinoyLogger<strong>{1}</strong>:23 - Utility Class initialized... Ready To Take ScreenShots
+17:22:08,461 DEBUG devpinoyLogger<strong>{1}</strong>:34 - Screenshot Captured: Before Login
+17:22:10,231 DEBUG devpinoyLogger<strong>{1}</strong>:34 - Screenshot Captured: After Login
+17:22:10,599 DEBUG devpinoyLogger<strong>{1}</strong>:28 - Open cart homepage is opened
+17:22:10,843 DEBUG devpinoyLogger<strong>{1}</strong>:34 - Screenshot Captured: Home Page
+17:22:10,845 DEBUG devpinoyLogger<strong>{1}</strong>:30 - To add items to cart using icon
+17:22:10,857 DEBUG devpinoyLogger<strong>{1}</strong>:35 - Scrolled to the items to be added
+17:22:10,857 DEBUG devpinoyLogger<strong>{1}</strong>:38 - Iterate through the list of items
+17:22:11,374 DEBUG devpinoyLogger<strong>{1}</strong>:47 - Finding the Add to Cart icon
+17:22:11,423 DEBUG devpinoyLogger<strong>{1}</strong>:50 - Add to Cart icon pressed
+17:22:11,941 DEBUG devpinoyLogger<strong>{1}</strong>:47 - Finding the Add to Cart icon
+17:22:11,970 DEBUG devpinoyLogger<strong>{1}</strong>:50 - Add to Cart icon pressed
+17:22:13,277 DEBUG devpinoyLogger<strong>{1}</strong>:59 - Scroll to Top of the homepage
+17:22:14,023 DEBUG devpinoyLogger<strong>{1}</strong>:34 - Screenshot Captured: After adding to cart
+17:22:14,026 DEBUG devpinoyLogger<strong>{1}</strong>:34 - To view Cart
+17:22:15,033 DEBUG devpinoyLogger<strong>{1}</strong>:40 - finding view cart button
+17:22:15,839 DEBUG devpinoyLogger<strong>{1}</strong>:42 - clicked view cart button
+17:22:16,860 DEBUG devpinoyLogger<strong>{1}</strong>:50 - scrolled to view items in cart
+17:22:18,000 DEBUG devpinoyLogger<strong>{1}</strong>:34 - Screenshot Captured: View Cart1
+17:22:18,013 DEBUG devpinoyLogger<strong>{1}</strong>:87 - To continue shopping
+17:22:19,031 DEBUG devpinoyLogger<strong>{1}</strong>:93 - clicking continue shopping button
+17:22:19,478 DEBUG devpinoyLogger<strong>{1}</strong>:95 - Migrates to the home page
+17:22:19,685 DEBUG devpinoyLogger<strong>{1}</strong>:34 - Screenshot Captured: After clicking Coninue shopping
+17:22:20,048 DEBUG devpinoyLogger<strong>{1}</strong>:71 - to view item specification before adding to cart
+17:22:20,054 DEBUG devpinoyLogger<strong>{1}</strong>:74 - Home page opened
+17:22:20,054 DEBUG devpinoyLogger<strong>{1}</strong>:76 - Scrolled down to the item to be selected
+17:22:20,564 DEBUG devpinoyLogger<strong>{1}</strong>:85 - finding the item to be added to the cart after viewing
+17:22:21,071 DEBUG devpinoyLogger<strong>{1}</strong>:92 - clicked on the item
+17:22:21,075 DEBUG devpinoyLogger<strong>{1}</strong>:95 - Item specification Page opened
+17:22:21,081 DEBUG devpinoyLogger<strong>{1}</strong>:97 - Scrolled down to fill details
+17:22:22,185 DEBUG devpinoyLogger<strong>{1}</strong>:105 - Selected color of the item
+17:22:22,281 DEBUG devpinoyLogger<strong>{1}</strong>:109 - enter the quantity of the item
+17:22:22,497 DEBUG devpinoyLogger<strong>{1}</strong>:115 - finding add to cart button
+17:22:22,553 DEBUG devpinoyLogger<strong>{1}</strong>:117 - Add to cart button clicked
+17:22:24,967 DEBUG devpinoyLogger<strong>{1}</strong>:34 - Screenshot Captured: After adding to Cart from item spec page
+17:22:25,347 DEBUG devpinoyLogger<strong>{1}</strong>:71 - to view item specification before adding to cart
+17:22:25,354 DEBUG devpinoyLogger<strong>{1}</strong>:74 - Home page opened
+17:22:25,354 DEBUG devpinoyLogger<strong>{1}</strong>:76 - Scrolled down to the item to be selected
+17:22:25,862 DEBUG devpinoyLogger<strong>{1}</strong>:85 - finding the item to be added to the cart after viewing
+17:22:26,366 DEBUG devpinoyLogger<strong>{1}</strong>:92 - clicked on the item
+17:22:27,188 DEBUG devpinoyLogger<strong>{1}</strong>:135 - enter the quantity of the item
+17:22:28,203 DEBUG devpinoyLogger<strong>{1}</strong>:141 - finding add to cart button
+17:22:28,272 DEBUG devpinoyLogger<strong>{1}</strong>:143 - Add to cart button clicked
+17:22:30,692 DEBUG devpinoyLogger<strong>{1}</strong>:34 - Screenshot Captured: After adding to Cart from item spec page
+17:22:31,136 DEBUG devpinoyLogger<strong>{1}</strong>:71 - to view item specification before adding to cart
+17:22:31,140 DEBUG devpinoyLogger<strong>{1}</strong>:74 - Home page opened
+17:22:31,142 DEBUG devpinoyLogger<strong>{1}</strong>:76 - Scrolled down to the item to be selected
+17:22:31,651 DEBUG devpinoyLogger<strong>{1}</strong>:85 - finding the item to be added to the cart after viewing
+17:22:32,151 DEBUG devpinoyLogger<strong>{1}</strong>:92 - clicked on the item
+17:22:32,973 DEBUG devpinoyLogger<strong>{1}</strong>:135 - enter the quantity of the item
+17:22:33,975 DEBUG devpinoyLogger<strong>{1}</strong>:141 - finding add to cart button
+17:22:34,013 DEBUG devpinoyLogger<strong>{1}</strong>:143 - Add to cart button clicked
+17:22:36,382 DEBUG devpinoyLogger<strong>{1}</strong>:34 - Screenshot Captured: After adding to Cart from item spec page
+17:22:36,397 DEBUG devpinoyLogger<strong>{1}</strong>:34 - To view Cart
+17:22:37,409 DEBUG devpinoyLogger<strong>{1}</strong>:40 - finding view cart button
+17:22:38,487 DEBUG devpinoyLogger<strong>{1}</strong>:42 - clicked view cart button
+17:22:39,514 DEBUG devpinoyLogger<strong>{1}</strong>:50 - scrolled to view items in cart
+17:22:40,659 DEBUG devpinoyLogger<strong>{1}</strong>:34 - Screenshot Captured: View Cart2
+17:22:40,659 DEBUG devpinoyLogger<strong>{1}</strong>:162 - to remove an item from cart
+17:22:40,674 DEBUG devpinoyLogger<strong>{1}</strong>:165 - scroll up to the view item button
+17:22:41,187 DEBUG devpinoyLogger<strong>{1}</strong>:171 - find view items button
+17:22:41,742 DEBUG devpinoyLogger<strong>{1}</strong>:181 - clicked on view items
+17:22:41,742 DEBUG devpinoyLogger<strong>{1}</strong>:183 - finding remove from cart button
+17:22:41,805 DEBUG devpinoyLogger<strong>{1}</strong>:185 - clicked remove item from cart button
+17:22:42,007 DEBUG devpinoyLogger<strong>{1}</strong>:191 - 1 item removed from the cart
+17:22:42,157 DEBUG devpinoyLogger<strong>{1}</strong>:34 - Screenshot Captured: After removing item from cart
+17:22:43,174 DEBUG devpinoyLogger<strong>{1}</strong>:106 - To view items in cart on current page
+17:22:43,174 DEBUG devpinoyLogger<strong>{1}</strong>:107 - find view item button
+17:22:45,822 DEBUG devpinoyLogger<strong>{1}</strong>:117 - Clicked on the view item button
+17:22:46,977 DEBUG devpinoyLogger<strong>{1}</strong>:34 - Screenshot Captured: View items
+17:22:46,977 DEBUG devpinoyLogger<strong>{1}</strong>:60 - to visit checkout page
+17:22:46,986 DEBUG devpinoyLogger<strong>{1}</strong>:63 - Scroll up the page
+17:22:47,988 DEBUG devpinoyLogger<strong>{1}</strong>:69 - find checkout page link
+17:22:48,485 DEBUG devpinoyLogger<strong>{1}</strong>:76 - opened checkout page
+17:22:49,608 DEBUG devpinoyLogger<strong>{1}</strong>:34 - Screenshot Captured: Checkout page
