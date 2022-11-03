@@ -4,6 +4,7 @@ import org.testng.annotations.Test;
 
 import opencart.CustomOpenCartDriver;
 import opencart.pages.SelectCurrencyPage;
+import utilities.SeleniumUtilities;
 
 import org.testng.annotations.BeforeMethod;
 
@@ -24,6 +25,7 @@ public class SelectCurrencyTest {
 	String baseFilePath = "C:\\Users\\Administrator\\Documents\\OpenCartTestImages";
 	CustomOpenCartDriver customDriver;
 	SelectCurrencyPage selectCurrency;
+	SeleniumUtilities util;
 	
 	 @BeforeMethod
 	  public void setUp() {
@@ -33,6 +35,7 @@ public class SelectCurrencyTest {
 		//Mazimize current window
 		  driver.manage().window().maximize();
 		  selectCurrency = new SelectCurrencyPage(driver);
+		  util = new SeleniumUtilities(driver);
 	  }
 	 public static void takeSnapShot(String fileWithPath) throws Exception{
 		 // This code will capture screenshot of current screen      
@@ -41,15 +44,32 @@ public class SelectCurrencyTest {
         ImageIO.write(image, "png", new File(fileWithPath)); 
     }
 	 
-  @Test
+  @Test(priority = 1)
   public void selectEuroTest() throws Exception {
-	  takeSnapShot(baseFilePath + "\\SelectCurrencyImgs\\beforeCurrency.png");
 	  selectCurrency.changeCurrencyToEuro();
+	  util.scroll(0,550);
+	  takeSnapShot(baseFilePath + "\\SelectCurrencyImgs\\afterCurrencyEuro.png");
+	  util.scroll(550,0);
+  }
+  
+  @Test(priority = 2)
+  public void selectUSDollar() throws Exception {
+	  selectCurrency.changeCurrencyToUSDollar();
+	  util.scroll(0,550);
+	  takeSnapShot(baseFilePath + "\\SelectCurrencyImgs\\afterCurrencyUSDollar.png");
+	  util.scroll(550,0);
   }
 
+  @Test(priority = 3)
+  public void selectPoundTest() throws Exception {
+	  selectCurrency.changeCurrencyToPound();
+	  util.scroll(0,550);
+	  takeSnapShot(baseFilePath + "\\SelectCurrencyImgs\\afterCurrencyPound.png");
+	  util.scroll(550,0);
+  }
+ 
   @AfterMethod
   public void tearDown() throws Exception {
-	  takeSnapShot(baseFilePath + "\\SelectCurrencyImgs\\afterCurrency.png");
 	  selectCurrency.closeBrowser();
   }
 

@@ -7,6 +7,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.Assert;
 
 public class SelectCurrencyPage {
 	WebDriver driver;
@@ -27,6 +28,10 @@ public class SelectCurrencyPage {
 	@CacheLookup
 	WebElement usDollar;
 	
+	@FindBy(xpath = "//div[@class = 'price'][1]/span[@class='price-new']")
+	@CacheLookup
+	WebElement checkPrice;
+	
 	public SelectCurrencyPage(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
@@ -38,7 +43,9 @@ public class SelectCurrencyPage {
 		
 		euro.click();
 		
-		Thread.sleep(3000);
+		char expectedPrice = '€';
+		char actualPrice = checkPrice.getText().charAt(checkPrice.getText().length()-1);
+		Assert.assertEquals(actualPrice, expectedPrice);
 	}
 	
 	public void changeCurrencyToPound() throws InterruptedException {
@@ -47,7 +54,9 @@ public class SelectCurrencyPage {
 		
 		poundSterling.click();
 		
-		Thread.sleep(3000);
+		char expectedPrice = '£';
+		char actualPrice = checkPrice.getText().charAt(0);
+		Assert.assertEquals(actualPrice, expectedPrice);
 	}
 	
 	public void changeCurrencyToUSDollar() throws InterruptedException {
@@ -56,7 +65,9 @@ public class SelectCurrencyPage {
 		
 		usDollar.click();
 		
-		Thread.sleep(3000);
+		char expectedPrice = '$';
+		char actualPrice = checkPrice.getText().charAt(0);
+		Assert.assertEquals(actualPrice, expectedPrice);
 	}
 	
 	public void closeBrowser() {
