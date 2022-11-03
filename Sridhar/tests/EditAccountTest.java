@@ -18,12 +18,6 @@ public class EditAccountTest {
 	EditAccountPage editAcc;
 	LoginPage loginPage;
 	WebDriver driver;
-  @Test
-  public void editAccountPageTest() throws Exception {
-	  loginPage.login("shridharmaskeri@gmail.com", "admin123");
-	  editAcc.editFirstName("Shridhar");
-	  editAcc.editFirstName("Maskeri");
-  }
   @BeforeMethod
   public void beforeMethod() throws InterruptedException {
 	  String baseUrl = "http://localhost/upload/index.php?route=common/home&language=en-gb";
@@ -31,10 +25,29 @@ public class EditAccountTest {
 	  driver.get(baseUrl);
 	  editAcc = new EditAccountPage(driver);
 	  loginPage = new LoginPage(driver);
+	  driver.manage().window().maximize();
+  }
+  
+  @Test(priority = 1)
+  public void editAccountFirstName() throws Exception {
+	  loginPage.login("temp@gmail.com", "admin");
+	  editAcc.editFirstName("Shridhar");
+  }
+  
+  @Test(priority = 2)
+  public void editAccountLastName() throws Exception {
+	  loginPage.login("temp@gmail.com", "admin");
+	  editAcc.editLastName("Maskeri");
+  }
+  
+  @Test(priority = 3)
+  public void editAccountEmail() throws Exception {
+	  loginPage.login("temp@gmail.com", "admin");
+	  editAcc.editEmail("temp@gmail.com");
   }
 
   @AfterMethod
-  public void afterMethod() {
+  public void afterMethod() throws Exception {
 	  editAcc.closeBrowser();
   }
 

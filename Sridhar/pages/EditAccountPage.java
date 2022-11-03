@@ -8,9 +8,14 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.Assert;
+
+import utilities.SeleniumUtilities;
 
 public class EditAccountPage {
 	private WebDriver driver;
+	SeleniumUtilities util;
+	
 	@FindBy(xpath = "//input[@name='firstname']")
 	@CacheLookup
 	WebElement firstName;
@@ -31,56 +36,74 @@ public class EditAccountPage {
 	@CacheLookup
 	WebElement continueBtn;
 	
+	@FindBy(xpath = "//div[@class = 'alert alert-success alert-dismissible']")
+	WebElement result;
+	
 	public EditAccountPage(WebDriver driver) throws InterruptedException {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
+		util = new SeleniumUtilities(driver);
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
 	}
 	
-	public void editFirstName(String firstName) throws InterruptedException {
-		
+	public void editFirstName(String firstName) throws Exception {
 		editBtn.click();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		SeleniumUtilities.logger("Edit Account Button clicked");
 		
+		SeleniumUtilities.takeSnapShot("\\EditAccountImgs\\beforeFirstNameEdit.png");
 		this.firstName.clear();
+		SeleniumUtilities.logger("Old First Name cleared");
+		
 		this.firstName.sendKeys(firstName);
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		SeleniumUtilities.logger("New First Name entered");
 		
-		continueBtn.click();
-		Thread.sleep(3000);
-		
+		SeleniumUtilities.takeSnapShot("\\EditAccountImgs\\afterFirstNameEdit.png");
 	}
 	
-	public void editLastName(String lastName) throws InterruptedException {
-		
+	public void editLastName(String lastName) throws Exception {
 		editBtn.click();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		SeleniumUtilities.logger("Edit Account Button clicked");
 		
+		SeleniumUtilities.takeSnapShot("\\EditAccountImgs\\beforeLastNameEdit.png");
 		this.lastName.clear();
+		SeleniumUtilities.logger("Old Last Name cleared");
+		
 		this.lastName.sendKeys(lastName);
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-		
-		continueBtn.click();
-		Thread.sleep(3000);
-		
+		SeleniumUtilities.logger("New Last Name entered");
+
+		SeleniumUtilities.takeSnapShot("\\EditAccountImgs\\afterLastNameEdit.png");
 	}
 	
-	public void editEmail(String email) throws InterruptedException {
+	public void editEmail(String email) throws Exception {
 		
 		editBtn.click();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		SeleniumUtilities.logger("Edit Account Button clicked");
 		
+		SeleniumUtilities.takeSnapShot("\\EditAccountImgs\\beforeEmailEdit.png");
 		this.email.clear();
+		SeleniumUtilities.logger("Old Email cleared");
+		
 		this.email.sendKeys(email);
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		SeleniumUtilities.logger("New Email entered");
 		
-		continueBtn.click();
-		Thread.sleep(3000);
-		
+		SeleniumUtilities.takeSnapShot("\\EditAccountImgs\\afterEmailEdit.png");
 	}
 	
 	
 	
-	public void closeBrowser() {
+	public void closeBrowser() throws Exception {
+		util.scroll(0, 150);
+		
+		continueBtn.click();
+		
+		Thread.sleep(2000);
+		
+		SeleniumUtilities.takeSnapShot("\\EditAccountImgs\\AccountEdited.png");
+		
+		String expectedResult = "Success: Your account has been successfully updated.";
+		String actualResult = result.getText();
+		Assert.assertEquals(actualResult,expectedResult);
+		
 		driver.quit();
 	}
 }
