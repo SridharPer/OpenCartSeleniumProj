@@ -1,9 +1,6 @@
 package Page;
 
 import java.time.Duration;
-
-import java.util.List;
-
 import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -13,6 +10,7 @@ import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 
 public class CartPage {
+	
 	private WebDriver driver;
 	private String baseurl="http://localhost/upload/index.php?route=common/home&language=en-gb";
     Logger log= Logger.getLogger("devpinoyLogger");
@@ -189,6 +187,59 @@ public class CartPage {
 			e.printStackTrace();
 		}
 		log.debug("1 item removed from the cart");
+
+	}
+	
+	public void emptyCart() {
+	    JavascriptExecutor js = (JavascriptExecutor) driver;
+	    log.debug("To empty the Cart");
+	    log.debug("Navigating to the cart page");
+	    driver.get("http://localhost/upload/index.php?route=checkout/cart");
+        Assert.assertEquals(driver.getTitle(), "Shopping Cart");
+        
+	    try {
+			Thread.sleep(700);
+		} catch (InterruptedException e1) {
+			e1.printStackTrace();
+		}
+	    if((driver.getTitle().toString()).equals("Your Store")) {
+	    	log.debug("Cart is already empty. Nothing to remove");
+	    }
+        Assert.assertEquals(driver.getTitle(), "Shopping Cart");
+
+        js.executeScript("window.scrollBy(0,250)", "");
+        log.debug("scrolled to view items in the cart");
+        try {
+			Thread.sleep(500);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+        log.debug("Finding remove item button");
+        log.debug("iterating through the items in the cart");
+        try {
+        	 while(driver.findElement(By.xpath("//*[@id='shopping-cart']/div/table/tbody/tr/td[4]/form/div/button[2]")).isDisplayed()) {
+                 WebElement removeBtn = driver.findElement(By.xpath("//*[@id='shopping-cart']/div/table/tbody/tr/td[4]/form/div/button[2]"));
+                 log.debug("Check if the remove item button is displayed");
+                 if (removeBtn.isDisplayed() != true) {
+     				break;
+     			}
+                 try {
+     				Thread.sleep(500);
+     			} catch (InterruptedException e) {
+     				e.printStackTrace();
+     			}
+                 log.debug("Click remove item from the cart button");
+             	removeBtn.click();
+             	log.debug("Refresh the page");
+             	driver.navigate().refresh();
+             }
+             log.debug("Cart is emptied");
+		} catch (Exception e) {
+		}
+        
+        log.debug("Cart is emptied");
+        log.debug("Nothing to remove");
+
 
 	}
 	
